@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,39 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ONG">
     <meta name="keyword" content="ONG, Adoção">
-    <title>ONG DOCE LAR</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/reponsivo.css">
+    <title>Minha Ong</title>
 </head>
 
 <body>
     <nav class="navbar"> <!--menu de barra de navegaçao-->
-        <div> <!--espaço separado para a logo-->
+        <div class="logo"> <!--espaço separado para a logo-->
             <h1>ONG Doce Lar</h1>
         </div>
-        <div> <!--espaço separado para menu-->
+        <div class="menu"> <!--espaço separado para menu-->
             <a href="index.html">HOME</a>
             <a href="projetos.html">Projetos</a>
+            <a id="botao" href="#">Fale Conosco</a>
         </div>
     </nav>
-    <header>
+    <header class="header">
 
-        <div>
-            <h2>Bem vindo a</h2>
-            <h2>ONG Doce Lar</h2>
+        <div class="headline">
+            <h2 style="letter-spacing: 15px;">Bem vindo a</h2>
+            <h2 style=" font-size: 80px;">ONG Doce Lar</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam et minus ad possimus amet magni, iure,
                 aliquam minima, odit ea voluptatum neque dignissimos nobis quaerat blanditiis cupiditate quae optio
                 perferendis.
             </p>
-            <a href="#">Seja um Voluntário</a>
+            <a href="cadastro.html">Seja um Voluntário</a>
         </div>
         <div class="img-headline">
-            <img style="max-width: 98%;" src="img/voluntario-posando.jpg" alt="Mulher e cao">
+            <img style="max-width: 98%;" src="img/voluntario-posando.jpg">
         </div>
 
     </header>
     <section>
         <h2>-O que nos move-</h2>
-        <div>
-            <div>
+        <div class="nos-move">
+            <div class="card">
                 <img src="img/missao.png" alt="icone de missao">
                 <h3>MISSÃO</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque blanditiis inventore voluptates
@@ -46,14 +50,14 @@
                     consectetur qui praesentium cumque molestias!</p>
             </div>
 
-            <div>
-                <img src="img/valores.png" alt="icone de missao">
+            <div class="card">
+                <img style="height: 80px;" src="img/valores.png" alt="icone de missao">
                 <h3>VALORES</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam distinctio, minima, deserunt nobis
                     facilis hic quae reprehenderit cupiditate tempore nisi velit commodi sunt. Quis ipsa ex doloremque
                     ullam ducimus in!</p>
             </div>
-            <div>
+            <div class="card">
                 <img src="img/vision.png" alt="icone de missao">
                 <h3>VISÃO</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem eum cupiditate natus veniam nobis,
@@ -66,7 +70,8 @@
         <h2>ONG Doce Lar</h2>
         <b>© Todos os direitos reservados. Outubro, 2025.</b>
     </footer>
-    <a href="#"> <img src="img/whatsapp.png" alt="Chat Whatsapp">
+    <a class="whatsapp" target="_blank" href="#">
+        <img style="width: 70px;" src="img/whatsapp.png" alt="Chat Whatsapp">
     </a>
 </body>
 
