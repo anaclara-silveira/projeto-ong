@@ -1,5 +1,10 @@
 .projetos-page {
     padding-top: 150px;
+    background-image: url('/img/projetos-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .projetos-page section {
@@ -17,7 +22,7 @@
     font-size: 50px;
     margin: 0;
     font-family: "Gravitas One", serif;
-    color: rgb(7, 78, 79);
+    color: antiquewhite;
 }
 
 /* Container principal do grid */
