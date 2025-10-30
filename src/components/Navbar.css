@@ -1,0 +1,126 @@
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 10%;
+    flex: 20%;
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: "Gravitas One", serif;
+    color: antiquewhite;
+    font-weight: 40;
+    font-style: normal;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.menu a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    font-size: 21px;
+    color: rgb(7, 78, 79);
+    border-top: 4px solid rgb(7, 78, 79);
+}
+
+#botao {
+    background-color: rgb(7, 78, 79);
+    padding: 10px 25px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+/* ESTILO DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+}
+
+.dropdown:hover .drop-menu,
+.drop-menu.show {
+    display: block;
+}
+
+.drop-menu a {
+    display: block;
+    color: antiquewhite;
+    background-color: rgb(7, 78, 79);
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.drop-menu a:hover {
+    background-color: cadetblue;
+}
+
+/* MENU HAMBURGUER */
+.hamburguer {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgb(7, 78, 79);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-open {
+        display: flex;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .menu a {
+        padding: 12px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar {
+        position: relative;
+    }
+}
+
