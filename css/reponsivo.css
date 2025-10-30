@@ -4,7 +4,8 @@
     }
 
     .menu {
-        display: none;
+        display: flex;
+        gap: 20px
     }
 
     .logo {
@@ -40,3 +41,62 @@
         width: 100%;
     }
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+
+}
+
+/*GERAL*/
+
+/*RESPONSIVOOOOOO*/
+.hamburguer {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/*checkbox invisivel*/
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /*esconde o menu normal*/
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgb(7, 78, 79);
+        ;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /*mostra o menu quando clica*/
+    .menu-toggle:checked+.hamburguer+.menu {
+        display: flex;
+    }
+
+    /*icone hamburguer */
+    .hamburguer {
+        display: block;
+    }
+
+    .menu a {
+        padding: 12px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }

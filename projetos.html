@@ -18,10 +18,19 @@
             <div class="logo"> <!--espaço separado para a logo-->
                 <h1>ONG Doce Lar</h1>
             </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburguer">&#9776;</label>
             <div class="menu"> <!--espaço separado para menu-->
                 <a href="index.html">HOME</a>
                 <a href="cadastro.html">Seja um Voluntário</a>
-                <a id="botao" href="#">Fale Conosco</a>
+                <div class="dropdown">
+                    <a id="botao" href="#">Fale Conosco</a>
+                    <div class="drop-menu">
+                        <a href="#">Email</a>
+                        <a href="#">Endereço</a>
+                        <a href="#">Telefone</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -56,5 +65,6 @@
         <img style="width: 70px;" src="img/whatsapp.png" alt="Chat Whatsapp">
     </a>
 
+</body>
 
 </html>

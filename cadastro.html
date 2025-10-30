@@ -7,6 +7,7 @@
     <meta name="description" content="Cadastro para voluntários da ONG Doce Lar">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/reponsivo.css">
     <title>Cadastro Voluntário - ONG Doce Lar</title>
 </head>
 
@@ -16,10 +17,19 @@
             <div class="logo"> <!--espaço separado para a logo-->
                 <h1>ONG Doce Lar</h1>
             </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburguer">&#9776;</label>
             <div class="menu"> <!--espaço separado para menu-->
                 <a href="index.html">HOME</a>
                 <a href="projetos.html">Projetos</a>
-                <a id="botao" href="#">Fale Conosco</a>
+                <div class="dropdown">
+                    <a id="botao" href="#">Fale Conosco</a>
+                    <div class="drop-menu">
+                        <a href="#">Email</a>
+                        <a href="#">Endereço</a>
+                        <a href="#">Telefone</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -27,7 +37,7 @@
     <main>
         <div class=" fundo-formulario">
 
-            <form class="formulario">
+            <form class="formulario" novalidate>
                 <fieldset>
                     <legend>Informações Pessoais</legend>
 
@@ -68,7 +78,6 @@
                         <option value="SP">São Paulo</option>
                         <option value="RJ">Rio de Janeiro</option>
                         <option value="MG">Minas Gerais</option>
-                        <!-- coloque mais estados conforme quiser -->
                     </select>
                 </fieldset>
 
@@ -85,6 +94,8 @@
     <a class="whatsapp" target="_blank" href="#">
         <img style="width: 70px;" src="img/whatsapp.png" alt="Chat Whatsapp">
     </a>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
