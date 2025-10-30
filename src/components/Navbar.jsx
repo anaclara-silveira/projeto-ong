@@ -30,8 +30,9 @@ function Navbar() {
         &#9776;
       </label>
       <div className={`menu ${menuOpen ? 'menu-open' : ''}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>HOME</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Página Inicial</Link>
         <Link to="/projetos" onClick={() => setMenuOpen(false)}>Projetos</Link>
+        <Link to="/cadastro" onClick={() => setMenuOpen(false)}>Seja um voluntário</Link>
         <div 
           className="dropdown"
           onMouseEnter={() => setDropdownOpen(true)}
