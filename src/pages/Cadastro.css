@@ -1,18 +1,28 @@
-/* fundo da página */
+.cadastro-page {
+    padding-top: 100px;
+    min-height: calc(100vh - 250px);
+}
 
+/* fundo da página */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('../img/voluntarios-brincando.jpg') no-repeat center center fixed;
-    /* caminho da imagem */
-    background-size: cover;
-    /* cobre toda a tela */
 }
 
+.cadastro-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/voluntarios-brincando.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
 
-
-/* eentralizar o formulário */
+/* centralizar o formulário */
 .fundo-formulario {
     display: flex;
     justify-content: center;
@@ -30,7 +40,6 @@ body {
     padding: 40px;
     border-radius: 15px;
     max-width: 600px;
-    /* aumenta o tamanho */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin: 0;
 }
@@ -47,6 +56,12 @@ body {
     color: antiquewhite;
 }
 
+.formulario label {
+    color: antiquewhite;
+    display: block;
+    margin-top: 10px;
+}
+
 .formulario input,
 .formulario select {
     width: 100%;
@@ -55,6 +70,13 @@ body {
     border-radius: 8px;
     border: 1px solid #999;
     font-size: 16px;
+}
+
+.formulario .error {
+    color: #ffcccc;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
 }
 
 .formulario input[type="submit"] {
@@ -73,7 +95,6 @@ body {
     background-color: #218838;
 }
 
-
 @media screen and (max-width: 768px) {
     .formulario {
         padding: 20px;
@@ -88,3 +109,4 @@ body {
         font-size: 14px;
     }
 }
+
