@@ -36,7 +36,7 @@ function Home() {
           </div>
 
           <div className="card">
-            <img style={{ height: '80px' }} src="/img/valores.png" alt="icone de valores" />
+            <img src="/img/valores.png" alt="icone de valores" />
             <h3>VALORES</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam distinctio, minima, deserunt nobis
