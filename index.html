@@ -17,10 +17,19 @@
         <div class="logo"> <!--espaço separado para a logo-->
             <h1>ONG Doce Lar</h1>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburguer">&#9776;</label>
         <div class="menu"> <!--espaço separado para menu-->
             <a href="index.html">HOME</a>
             <a href="projetos.html">Projetos</a>
-            <a id="botao" href="#">Fale Conosco</a>
+            <div class="dropdown">
+                <a id="botao" href="#">Fale Conosco</a>
+                <div class="drop-menu">
+                    <a href="#">Email</a>
+                    <a href="#">Endereço</a>
+                    <a href="#">Telefone</a>
+                </div>
+            </div>
         </div>
     </nav>
     <header class="header">
@@ -32,7 +41,10 @@
                 aliquam minima, odit ea voluptatum neque dignissimos nobis quaerat blanditiis cupiditate quae optio
                 perferendis.
             </p>
-            <a href="cadastro.html">Seja um Voluntário</a>
+            <div class="drop">
+                <a href="cadastro.html">Seja um Voluntário</a>
+            </div>
+
         </div>
         <div class="img-headline">
             <img style="max-width: 98%;" src="img/voluntario-posando.jpg">

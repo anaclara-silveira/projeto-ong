@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gravitas+One&family=Lobster&display=swap');
 
+/*ESTILO GERAAAAAL*/
 * {
     box-sizing: border-box;
     /* padrao*/
@@ -15,7 +16,6 @@ body {
     /*alinha o menu*/
     flex-flow: row wrap;
     /*em linha e ficar dentro do "espaco determinado"*/
-
     height: 100px;
     /*altura*/
     background-color: cadetblue;
@@ -48,13 +48,10 @@ body {
 }
 
 .menu {
-    flex: 70%;
-    /*display tipo flex, ir testando ate chegar no tamanho que eu quero*/
-    /* border: 1px solid rgb(4, 255, 0); */
-    /*so para vizualizar como esta ficando, tela cheia*/
-    text-align: right;
-    /*alinhar na direita*/
-    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
     /*preencher*/
 }
 
@@ -80,9 +77,67 @@ body {
     padding: 10px 25px;
     color: antiquewhite;
     border-radius: 5px;
-    margin-right: 10%;
-    /*essas margins sao pra afastar um pouquinho*/
-    margin-left: 5%;
+
+}
+
+footer {
+    padding-top: 2%;
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 100px;
+    height: 200px;
+    background-image: linear-gradient(180deg, #46b8ba, rgb(7, 78, 79));
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+
+}
+
+/*GERAAAAAL*/
+
+/*INICIO ESTILO DROPDOWN*/
+
+.dropdown {
+    position: relative;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+}
+
+.dropdown:hover .drop-menu {
+    display: block;
+}
+
+.drop-menu a {
+    display: block;
+    color: antiquewhite;
+    background-color: rgb(7, 78, 79);
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.drop-menu a:hover {
+    background-color: cadetblue;
+}
+
+/*FINAL ESTILO DROPDOWN*/
+
+/*mostra o menu quando clica*/
+.menu-toggle:checked+.hamburguer+.menu {
+    display: flex;
+}
+
+/*icone hamburguer */
+.hamburguer {
+    display: block;
 }
 
 .header {
@@ -188,20 +243,4 @@ section h2 {
     background-color: rgb(7, 78, 79);
     color: antiquewhite;
     padding: 3%;
-}
-
-footer {
-    padding-top: 2%;
-    text-align: center;
-    color: antiquewhite;
-    margin-top: 100px;
-    height: 200px;
-    background-image: linear-gradient(180deg, #46b8ba, rgb(7, 78, 79));
-}
-
-.whatsapp {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-
 }
