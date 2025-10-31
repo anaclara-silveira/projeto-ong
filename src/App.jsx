@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from './contexts/ThemeContext'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -9,6 +10,7 @@ import './App.css'
 
 function App() {
   return (
+    <ThemeProvider>
     <Router>
       <div className="app">
         <Navbar />
@@ -23,6 +25,7 @@ function App() {
         <WhatsAppFloat />
       </div>
     </Router>
+    </ThemeProvider>
   )
 }
 

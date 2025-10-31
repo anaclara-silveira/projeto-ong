@@ -1,6 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gravitas+One&family=Lobster&display=swap');
 
-/*ESTILO GERAL*/
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: rgb(240, 229, 244);
+    --bg-navbar: cadetblue;
+    --bg-footer-start: #46b8ba;
+    --bg-footer-end: rgb(7, 78, 79);
+    --text-primary: rgb(3, 45, 41);
+    --text-secondary: antiquewhite;
+    --text-heading: rgb(7, 78, 79);
+    --border-color: rgb(7, 78, 79);
+    --card-bg: rgb(240, 229, 244);
+    --card-hover-bg: rgb(7, 78, 79);
+    --form-bg: rgba(7, 78, 79, 0.622);
+    --form-border: #ccc;
+    --button-bg: rgb(7, 78, 79);
+    --button-hover-bg: antiquewhite;
+    --button-hover-text: rgb(7, 78, 79);
+}
+
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-navbar: #1e3a3a;
+    --bg-footer-start: #1e3a3a;
+    --bg-footer-end: #0f1f1f;
+    --text-primary: #e0e0e0;
+    --text-secondary: #c0c0c0;
+    --text-heading: #46b8ba;
+    --border-color: #46b8ba;
+    --card-bg: #2d2d2d;
+    --card-hover-bg: #3a5a5a;
+    --form-bg: rgba(30, 58, 58, 0.85);
+    --form-border: #555;
+    --button-bg: #46b8ba;
+    --button-hover-bg: #5dd3d6;
+    --button-hover-text: #0f1f1f;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,12 +45,17 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .app {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
 }
 
 main {
