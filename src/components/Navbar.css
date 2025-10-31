@@ -2,12 +2,13 @@
     display: flex;
     flex-flow: row wrap;
     height: 100px;
-    background-color: cadetblue;
+    background-color: var(--bg-navbar);
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
 .logo {
@@ -18,9 +19,10 @@
 
 .logo h1 {
     font-family: "Gravitas One", serif;
-    color: antiquewhite;
+    color: var(--text-secondary);
     font-weight: 40;
     font-style: normal;
+    transition: color 0.3s ease;
 }
 
 .menu {
@@ -31,23 +33,25 @@
 }
 
 .menu a {
-    color: antiquewhite;
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 20px;
     padding: 20px 16px;
+    transition: all 0.3s ease;
 }
 
 .menu a:hover {
     font-size: 21px;
-    color: rgb(7, 78, 79);
-    border-top: 4px solid rgb(7, 78, 79);
+    color: var(--text-heading);
+    border-top: 4px solid var(--text-heading);
 }
 
 #botao {
-    background-color: rgb(7, 78, 79);
+    background-color: var(--button-bg);
     padding: 10px 25px;
-    color: antiquewhite;
+    color: var(--text-secondary);
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ESTILO DROPDOWN */
@@ -70,14 +74,15 @@
 
 .drop-menu a {
     display: block;
-    color: antiquewhite;
-    background-color: rgb(7, 78, 79);
+    color: var(--text-secondary);
+    background-color: var(--button-bg);
     padding: 10px 10px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .drop-menu a:hover {
-    background-color: cadetblue;
+    background-color: var(--bg-navbar);
 }
 
 /* MENU HAMBURGUER */
@@ -85,11 +90,42 @@
     display: none;
     font-size: 28px;
     cursor: pointer;
-    color: antiquewhite;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
 }
 
 .menu-toggle {
     display: none;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+.theme-toggle:focus {
+    outline: 2px solid var(--text-heading);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 /* RESPONSIVO */
@@ -101,9 +137,10 @@
         top: 60px;
         right: 0;
         width: 100%;
-        background-color: rgb(7, 78, 79);
+        background-color: var(--button-bg);
         text-align: center;
         padding: 10px 0;
+        transition: background-color 0.3s ease;
     }
 
     .menu-open {
@@ -121,6 +158,15 @@
 
     .navbar {
         position: relative;
+    }
+
+    .theme-toggle {
+        margin-right: 10px;
+    }
+
+    .theme-toggle svg {
+        width: 20px;
+        height: 20px;
     }
 }
 

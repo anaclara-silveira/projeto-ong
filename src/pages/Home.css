@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    background-color: rgb(240, 229, 244);
+    background-color: var(--bg-secondary);
     padding: 100px;
     padding-top: 150px;
+    transition: background-color 0.3s ease;
 }
 
 .headline {
@@ -17,31 +18,34 @@
 .headline h2 {
     font-weight: 800;
     font-size: 20px;
-    color: cadetblue;
+    color: var(--bg-navbar);
     padding: 0;
     margin: 0;
+    transition: color 0.3s ease;
 }
 
 .headline p {
-    color: rgb(3, 45, 41);
+    color: var(--text-primary);
     text-align: left;
+    transition: color 0.3s ease;
 }
 
 .headline a {
     display: inline-block;
-    background-color: rgb(7, 78, 79);
+    background-color: var(--button-bg);
     padding: 10px 25px;
-    color: antiquewhite;
+    color: var(--text-secondary);
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
 .headline a:hover {
-    background-color: antiquewhite;
-    color: rgb(7, 78, 79);
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
     cursor: pointer;
-    border: 1px solid rgb(7, 78, 79);
+    border: 1px solid var(--border-color);
 }
 
 .img-headline {
@@ -65,7 +69,8 @@ section h2 {
     font-size: 50px;
     margin: 0;
     font-family: "Gravitas One", serif;
-    color: rgb(7, 78, 79);
+    color: var(--text-heading);
+    transition: color 0.3s ease;
 }
 
 .nos-move {
@@ -82,8 +87,11 @@ section h2 {
     width: 30%;
     padding: 20px;
     margin: 0;
-    border: 1px solid rgb(7, 78, 79);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 .card img {
@@ -98,8 +106,8 @@ section h2 {
 }
 
 .card:hover {
-    background-color: rgb(7, 78, 79);
-    color: antiquewhite;
+    background-color: var(--card-hover-bg);
+    color: var(--text-secondary);
     padding: 3%;
 }
 

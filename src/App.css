@@ -1,2 +1,7 @@
 /* Estilos globais do app */
 
+.app .cadastro-page ~ *,
+main:has(.cadastro-page) {
+    background: transparent;
+}
+
